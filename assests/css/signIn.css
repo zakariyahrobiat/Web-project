@@ -37,3 +37,9 @@ body form button {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
+@media screen and (min-width: 778px) {
+  body {
+    width: 50%;
+    margin: auto;
+  }
+}
