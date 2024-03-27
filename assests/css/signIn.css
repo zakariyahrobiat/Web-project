@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem 1rem;
+}
+body h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+body form {
+  padding: 1rem 0;
+}
+body form input,
+body form select,
+body form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgb(226, 224, 224);
+}
+body form #terms {
+  width: 3rem;
+}
+body form button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
