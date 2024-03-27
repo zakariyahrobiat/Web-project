@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 1.5rem;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20rem; */
+}
+body nav .logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+body nav .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+body nav ul {
+  display: none;
+}
+
+body nav .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+body nav button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+body main {
+  padding: 4rem 0;
+  text-align: center;
+}
+body main .greeting {
+  text-align: center;
+  margin: 1rem auto 2rem auto;
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+body main .text {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+main button {
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 778px) {
+  body nav .logo-container #hamburger {
+    display: none;
+  }
+  body nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  body nav ul li {
+    list-style: none;
+  }
+  body main {
+    width: 50vw;
+    margin: auto;
+  }
+  body main .greeting {
+    width: 25vw;
+  }
+}
