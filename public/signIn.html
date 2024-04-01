@@ -4,31 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let connect</title>
+    <script
+      src="https://kit.fontawesome.com/2a79f8b0ce.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/assests/css/signIn.css" />
   </head>
   <body>
     <h1>Create Account</h1>
     <p>To keep connected with us create your Account</p>
-    <form action="">
-      <input type="email" name="email" id="email" placeholder="Email" />
-      <input
-        type="email"
-        name="confirmEmail"
-        id="confirmEmail"
-        placeholder="Confirm Email"
-      />
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="password"
-      />
-      <input
-        type="password"
-        name="confirmPassword"
-        id="confirmPassword"
-        placeholder="Confirm Password"
-      />
+    <form action="" id="form">
+      <div class="form-control">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <input
+          type="email"
+          name="confirmEmail"
+          id="confirmEmail"
+          placeholder="Confirm Email"
+        />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
       <label for="gender">Gender</label>
       <select name="gender" id="gender">
         <option value="female">Female</option>
@@ -51,5 +75,6 @@
       <button type="submit">Create an Account</button>
       <p>Already have an account? <a href="/public/LogIn.html">Log In</a></p>
     </form>
+    <script src="/assests/js/form.js"></script>
   </body>
 </html>

@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login</title>
+    <script
+      src="https://kit.fontawesome.com/2a79f8b0ce.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/assests/css/signIn.css" />
   </head>
   <body>
     <h1>Login now</h1>
-    <form action="">
-      <input type="email" name="email" id="email" placeholder="Email" />
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="password"
-      />
+    <form action="" id="login">
+      <div class="form-control">
+        <input type="email" name="email" id="loginEmail" placeholder="Email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <input
+          type="password"
+          name="password"
+          id="loginPassword"
+          placeholder="password"
+        />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small></small>
+      </div>
       <button type="submit">Login</button>
     </form>
+    <script src="/assests/js/login.js"></script>
   </body>
 </html>
