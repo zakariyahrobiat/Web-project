@@ -1,5 +1,6 @@
 login = document.getElementById("login");
-console.log(login);
+showPassword = document.getElementById("show");
+
 loginEmail = document.getElementById("loginEmail");
 loginPassword = document.getElementById("loginPassword");
 login.addEventListener("submit", (e) => {
@@ -39,3 +40,10 @@ function setSucess(input) {
   formControl = input.parentElement;
   formControl.classList = "form-control success";
 }
+showPassword.addEventListener("click", () => {
+  if (loginPassword.type === "password") {
+    loginPassword.type = "text";
+  } else {
+    loginPassword.type = "password";
+  }
+});

@@ -13,12 +13,11 @@ body h1 {
 body form {
   padding: 1rem 0;
 }
-body form input {
+body form .input {
   width: 100%;
-  /* margin-bottom: 1rem; */
+
   padding: 0.5rem;
-  /* padding: 10px; */
-  /* border: 1px solid black; */
+
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -36,12 +35,27 @@ body form textarea {
   font-size: 1rem;
   background-color: rgb(226, 224, 224);
 }
+
+.showPassword label {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 2rem;
+
+  width: 100%;
+}
+
+#show,
+#showconfirm {
+  position: absolute;
+  opacity: 0;
+}
 .form-control {
   margin-bottom: 0.5rem;
   padding-bottom: 20px;
   position: relative;
 }
-i {
+.form-control i {
   position: absolute;
   top: 10px;
   right: 20px;

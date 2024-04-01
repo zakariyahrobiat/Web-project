@@ -1,5 +1,7 @@
 form = document.getElementById("form");
-
+showPassword = document.getElementById("show");
+showConfirmPassword = document.getElementById("showconfirm");
+console.log(showConfirmPassword);
 email = document.getElementById("email");
 confirmEmail = document.getElementById("confirmEmail");
 password = document.getElementById("password");
@@ -50,3 +52,18 @@ function setSucess(input) {
   formControl = input.parentElement;
   formControl.classList = "form-control success";
 }
+showPassword.addEventListener("click", () => {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+});
+showConfirmPassword.addEventListener("click", () => {
+  console.log("hoe are");
+  if (confirmPassword.type === "password") {
+    confirmPassword.type = "text";
+  } else {
+    confirmPassword.type = "password";
+  }
+});

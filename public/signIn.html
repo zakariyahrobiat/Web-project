@@ -15,7 +15,13 @@
     <p>To keep connected with us create your Account</p>
     <form action="" id="form">
       <div class="form-control">
-        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="input"
+        />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small></small>
@@ -26,6 +32,7 @@
           name="confirmEmail"
           id="confirmEmail"
           placeholder="Confirm Email"
+          class="input"
         />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
@@ -37,10 +44,17 @@
           name="password"
           id="password"
           placeholder="password"
+          class="input"
         />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small></small>
+        <div class="showPassword">
+          <input type="checkbox" name="show" id="show" />
+          <label for="show">
+            <i class="fas fa-eye"></i>
+          </label>
+        </div>
       </div>
       <div class="form-control">
         <input
@@ -48,10 +62,17 @@
           name="confirmPassword"
           id="confirmPassword"
           placeholder="Confirm Password"
+          class="input"
         />
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small></small>
+        <div class="showPassword">
+          <input type="checkbox" name="show" id="showconfirm" />
+          <label for="showconfirm">
+            <i class="fas fa-eye"></i>
+          </label>
+        </div>
       </div>
       <label for="gender">Gender</label>
       <select name="gender" id="gender">
